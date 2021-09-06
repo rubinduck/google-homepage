@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#page-container {
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    font-family: arial,sans-serif;
+}
+
+header {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header-part {
+    display: flex;
+    direction: row;
+    align-items: center;
+}
+
+.header-part > div {
+    font-size: smaller;
+    padding: 0 1em 0 1em;
+    flex-shrink: 1;
+}
+
+#sign-in-button {
+    font-size: larger;
+    background-color: #2b7de9;
+    border-radius: 0.3em;
+    padding: 0.5em 1.25em 0.5em 1.25em;
+    color: white;
+}
+
+#google-apps > a{
+    display: grid;
+    grid-template-areas:
+        ". . ."
+        ". . ."
+        ". . .";
+    gap: 2px;
+}
+.dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #5f6368;
+}
+
+main {
+    flex-grow: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+
+#google-logo {
+    width: 272px;
+    height: auto;
+}
+
+#search-bar {
+    margin-top: 1.25em;
+    display: block;
+    min-width: 300px;
+    width: 500px;
+    max-width: 400px;
+    line-height: 2.5em;
+    border-radius: 1.5em;
+    border: 1px solid #dfe1e5;
+}
+
+#search-buttons-container {
+    margin-top: 0.5em;
+    font-size: smaller;
+    gap: 1em;
+    display: flex;
+    flex-direction: flex-row;
+    justify-content: center;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+#search-buttons-container > input {
+    font-size: 1.25em;
+    background-color: #F8F9FA;
+    border: none;
+    padding: 0.6em;
+}
+
+footer {
+    background-color: #f2f2f2;
+    height: 30px;
+    min-height: 30px;
+    flex-grow: 1;
+}
