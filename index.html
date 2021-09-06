@@ -3,10 +3,10 @@
 <head>
 <!-- TODO figure out how to make autocomplete single quotes -->
 </head>
-<body>
 <style>
     body {
         margin: 0;
+        width: 100%;
     }
 
     a {
@@ -19,6 +19,7 @@
     }
 
     #page-container {
+        overflow-x: hidden;
         height: 100vh;
         display: flex;
         flex-grow: 1;
@@ -30,7 +31,7 @@
         margin-top: 10px;
         display: flex;
         flex-direction: row;
-        width: 100vw;
+        width: 100%;
         justify-content: space-between;
     }
 
@@ -43,6 +44,7 @@
     .header-part > div {
         font-size: smaller;
         padding: 0 1em 0 1em;
+        flex-shrink: 1;
     }
 
     #sign-in-button {
@@ -55,11 +57,11 @@
 
     #google-apps > a{
         display: grid;
-        grid-template-areas: 
+        grid-template-areas:
             ". . ."
             ". . ."
             ". . .";
-        gap: 3px;
+        gap: 2px;
     }
     .dot {
         width: 4px;
@@ -80,7 +82,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 100px
+        padding: 100px;
     }
 
     #google-logo {
@@ -93,7 +95,7 @@
         display: block;
         min-width: 300px;
         width: 500px;
-        max-width: 500px;
+        max-width: 400px;
         line-height: 2.5em;
         border-radius: 1.5em;
         border: 1px solid #dfe1e5;
@@ -124,6 +126,7 @@
         flex-grow: 1;
     }
 </style>
+<body>
 <div id='page-container'>
 <header>
     <div id='header_left-part' class='header-part'>
