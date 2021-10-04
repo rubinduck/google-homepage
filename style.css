@@ -22,11 +22,16 @@ a:hover {
 }
 
 header {
-    margin-top: 10px;
+    font-size: 0.9rem;
+    margin-top: 0.625rem;
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+}
+
+.header-part:first-of-type {
+    padding: 1em;
 }
 
 .header-part {
@@ -35,8 +40,11 @@ header {
     align-items: center;
 }
 
+.header-part:first-of-type > div {
+    padding-left: 0.7em;
+}
+
 .header-part > div {
-    font-size: smaller;
     padding: 0 1em 0 1em;
     flex-shrink: 1;
 }
