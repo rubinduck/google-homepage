@@ -97,12 +97,12 @@ main {
 }
 
 #search-bar {
-    margin-top: 1.25em;
+    margin-top: 20px;
     display: block;
     min-width: 300px;
-    width: 500px;
-    max-width: 400px;
-    line-height: 2.5em;
+    width: 600px;
+    max-width: 600px;
+    line-height: 3em;
     border-radius: 1.5em;
     border: 1px solid #dfe1e5;
 }
