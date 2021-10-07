@@ -134,12 +134,12 @@ main {
     margin-top: 1em;
 }
 
-#search-buttons-container > input {
-    font-size: 1.25em;
-    border-radius: 0.25em;
+#search-buttons-container > input[type="button"] {
+    font-size: 0.9rem;
+    border-radius: 0.25rem;
     background-color: #F8F9FA;
     border: none;
-    padding: 0.6em;
+    padding: 0.8em 1em 0.8em 1em;
 }
 
 #search-icon {
