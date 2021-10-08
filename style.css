@@ -54,11 +54,25 @@ header {
 }
 
 #sign-in-button {
-    font-size: larger;
     background-color: #1a73e8;
-    border-radius: 0.3em;
-    padding: 0.5em 1.25em 0.5em 1.25em;
+    border-radius: 0.35rem;
+    padding: 0.6rem 1.1rem 0.6rem 1.1rem;
+    margin-right: 0.5rem;
     color: white;
+    position: relative;
+}
+
+#sign-in-button > a:hover {
+    text-decoration: none;
+}
+
+#sign-in-button > a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 #google-apps > a{
