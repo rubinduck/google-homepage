@@ -92,9 +92,14 @@ main {
     max-width: 100vw;
 }
 
+@media (max-height: 650px){
+    #search-container {
+        padding-top: 5%;
+    }
+}
 @media (max-height: 500px){
     #search-container {
-        padding-top: 2.5%;
+        padding-bottom: 2rem;
     }
 }
 #google-logo {
@@ -158,7 +163,48 @@ main {
 
 footer {
     background-color: #f2f2f2;
-    height: 30px;
-    min-height: 30px;
-    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.footer-part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-left-part {
+    margin-right: 2.5%;
+}
+
+.footer-right-part {
+    margin-left: 2.5%;
+}
+
+.footer-link-container {
+    font-size: 0.9rem;
+    padding: 1rem;
+    color: #70757a;
+}
+
+
+@media (max-width: 600px){
+    footer {
+        flex-wrap: wrap;
+    }
+
+    .footer-link-container {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+}
+
+@media (min-width: 1000px){
+    footer {
+        justify-content: space-between;
+    }
+    .footer-part {
+        margin: 0 2rem 0 2rem;
+    }
 }
