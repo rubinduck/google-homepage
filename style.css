@@ -167,9 +167,9 @@ main {
 #search-bar {
     max-width: 80%;
     margin-top: 20px;
-    min-width: 400px;
+    min-width: 450px;
     width: 725px;
-    line-height: 2.5rem;
+    line-height: 2.6rem;
     border-radius: 1.5rem;
     border: 1px solid #dfe1e5;
 }
