@@ -146,8 +146,8 @@ main {
     width: 32px;
     height: 32px;
     position: absolute;
-    top: 2em;
-    left: 4.5em;
+    top: 50%;
+    left: 12.5%;
     opacity: 0.35;
 }
 
