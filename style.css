@@ -18,6 +18,12 @@ a:hover {
 }
 
 
+/* Variables */
+:root {
+    --light-grey: rgba(60,64,67,0.08);
+}
+
+
 
 /* Page style */
 #page-container {
@@ -107,7 +113,7 @@ header {
 }
 
 #google-apps-link:hover::before {
-    background-color: rgba(60,64,67,0.08);
+    background-color: var(--light-grey);
 }
 
 .dot {
@@ -168,6 +174,10 @@ main {
     border: 1px solid #dfe1e5;
 }
 
+#search-bar:hover {
+    box-shadow: 0 0 2px 2px var(--light-grey);
+}
+
 #search-bar__input {
     font-size: 1rem;
     margin-left: 3.5rem;
@@ -214,7 +224,6 @@ footer {
     justify-content: center;
 }
 
-
 .footer-part {
     display: flex;
     flex-direction: row;
@@ -234,7 +243,6 @@ footer {
     padding: 1rem;
     color: #70757a;
 }
-
 
 @media (max-width: 600px){
     footer {
