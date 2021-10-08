@@ -75,13 +75,28 @@ header {
     left: 0;
 }
 
-#google-apps > a{
+#google-apps-link {
+    position: relative;
     display: grid;
     grid-template-areas:
         ". . ."
         ". . ."
         ". . .";
     gap: 2px;
+}
+
+#google-apps-link::before {
+    content: "";
+    width: 250%;
+    height: 250%;
+    border-radius: 50%;
+    position: absolute;
+    top: -75%;
+    left: -75%;
+}
+
+#google-apps-link:hover::before {
+    background-color: rgba(60,64,67,0.08);
 }
 
 .dot {
