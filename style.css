@@ -1,3 +1,4 @@
+/* Reset styles */
 body {
     margin: 0;
     width: 100%;
@@ -16,6 +17,9 @@ a:hover {
     text-decoration: underline;
 }
 
+
+
+/* Page style */
 #page-container {
     overflow-x: hidden;
     height: 100vh;
@@ -25,6 +29,9 @@ a:hover {
     font-family: arial,sans-serif;
 }
 
+
+
+/* Header style */
 header {
     font-size: 0.9rem;
     margin-top: 0.625rem;
@@ -106,6 +113,9 @@ header {
     background-color: #5f6368;
 }
 
+
+
+/* Main page part style */
 main {
     flex-grow: 5;
     display: flex;
@@ -190,6 +200,9 @@ main {
     opacity: 0.35;
 }
 
+
+
+/* Footer style */
 footer {
     background-color: #f2f2f2;
     display: flex;
