@@ -61,7 +61,7 @@ header {
 }
 
 #sign-in-button {
-    background-color: #1a73e8;
+    background-color: RGBA(26, 115, 232, 1);
     border-radius: 0.35rem;
     padding: 0.6rem 1.1rem 0.6rem 1.1rem;
     margin-right: 0.5rem;
@@ -71,6 +71,10 @@ header {
 
 #sign-in-button > a:hover {
     text-decoration: none;
+}
+
+#sign-in-button:hover {
+    background-color: RGBA(26, 115, 232, 0.9);
 }
 
 #sign-in-button > a::before {
