@@ -38,30 +38,20 @@ a:hover {
 
 /* Header style */
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     width: 100%;
     margin-top: 0.625rem;
     font-size: 0.9rem;
 }
 
-.header-half {
+#header-buttons-containers {
     display: flex;
     flex-direction: row;
     align-items: center;
+    float: right;
 }
 
-.header-half > .header-button-container {
+ .header-button-container {
     padding: 0 0.9rem 0 0.9rem;
-}
-
-.header-half__left {
-    /* padding: 1em; */
-}
-
-.header-half__left > .header-button-container {
-    /* padding-left: 0.7em; */
 }
 
 #sign-in-button {
@@ -247,7 +237,7 @@ footer {
     color: #70757a;
 }
 
-@media (max-width: 600px){
+@media (max-width: 650px){
     footer {
         flex-wrap: wrap;
     }
