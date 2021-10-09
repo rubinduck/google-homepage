@@ -46,22 +46,22 @@ header {
     font-size: 0.9rem;
 }
 
-.header-part:first-of-type {
-    padding: 1em;
-}
-
-.header-part {
+.header-half {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.header-part:first-of-type > div {
-    padding-left: 0.7em;
+.header-half > .header-button-container {
+    padding: 0 0.9rem 0 0.9rem;
 }
 
-.header-part > div {
-    padding: 0 1em 0 1em;
+.header-half__left {
+    /* padding: 1em; */
+}
+
+.header-half__left > .header-button-container {
+    /* padding-left: 0.7em; */
 }
 
 #sign-in-button {
@@ -101,11 +101,11 @@ header {
 }
 
 #google-apps-link::before {
+    position: absolute;
     content: "";
     width: 250%;
     height: 250%;
     border-radius: 50%;
-    position: absolute;
     top: -75%;
     left: -75%;
 }
@@ -131,7 +131,7 @@ main {
     flex-grow: 5;
 }
 
-#search-container {
+#search-section-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,12 +140,12 @@ main {
 }
 
 @media (max-height: 650px){
-    #search-container {
+    #search-section-container {
         padding-top: 5%;
     }
 }
 @media (max-height: 500px){
-    #search-container {
+    #search-section-container {
         padding-bottom: 2rem;
     }
 }
@@ -186,9 +186,9 @@ main {
 
 #search-buttons-container {
     display: flex;
-    flex-direction: flex-row;
+    flex-direction: row;
     justify-content: center;
-    gap: 1em;
+    gap: 1rem;
     padding: 1em;
     margin-top: 1em;
     font-size: smaller;
@@ -204,7 +204,7 @@ main {
 
 .search-button:hover {
     box-shadow: inset 0 0 0 1px #dadce0,
-    0 1px 0 1px var(--light-grey);
+                0 1px 0 1px var(--light-grey);
     cursor: pointer;
 }
 
@@ -227,17 +227,17 @@ footer {
     background-color: #f2f2f2;
 }
 
-.footer-part {
+.footer-half {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.footer-left-part {
+.footer-half__left {
     margin-right: 2.5%;
 }
 
-.footer-right-part {
+.footer-half__right {
     margin-left: 2.5%;
 }
 
@@ -261,7 +261,7 @@ footer {
     footer {
         justify-content: space-between;
     }
-    .footer-part {
+    .footer-half {
         margin: 0 2rem 0 2rem;
     }
 }

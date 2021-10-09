@@ -1,55 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- TODO figure out how to make autocomplete single quotes -->
-<link rel='stylesheet' href='style.css'>
+    <link rel='stylesheet' href='style.css'>
 </head>
 <body>
 <div id='page-container'>
 <header>
-    <div id='header_left-part' class='header-part'>
-        <div><a href='#'>About</a></div>
-        <div><a href='#'>Store</a></div>
+    <div class='header-half header-half__left'>
+        <div class='header-button-container'><a href='#'>About</a></div>
+        <div class='header-button-container'><a href='#'>Store</a></div>
     </div>
-    <div id='header_right-part' class='header-part'>
-        <div><a href='#'>Gmail</a></div>
-        <div><a href='#'>Images</a></div>
-        <div id='google-apps-button'><a href='#' id='google-apps-link'>
-            <div class='dot'></div>
-            <div class='dot'></div>
-            <div class='dot'></div>
-            <div class='dot'></div>
-            <div class='dot'></div>
-            <div class='dot'></div>
-            <div class='dot'></div>
-            <div class='dot'></div>
-            <div class='dot'></div>
+    <div class='header-half header-half__right'>
+        <div class='header-button-container'>
+            <a href='#'>Gmail</a>
+        </div>
+        <div class='header-button-container'>
+            <a href='#'>Images</a>
+        </div>
+        <div class='header-button-container' id='google-apps-button'>
+            <a href='#' id='google-apps-link'>
+              <div class='dot'></div>
+              <div class='dot'></div>
+              <div class='dot'></div>
+              <div class='dot'></div>
+              <div class='dot'></div>
+              <div class='dot'></div>
+              <div class='dot'></div>
+              <div class='dot'></div>
+              <div class='dot'></div>
         </a></div>
-        <div>
+        <div class='header-button-container'>
             <div id='sign-in-button'>
-                <a href='#'>Sign in</a></div>
+                <a href='#'>Sign in</a>
             </div>
+        </div>
     </div>
 </header>
 <main>
-    <div id='search-container'>
+    <div id='search-section-container'>
         <img id='google-logo' src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'>
         <div id='search-bar-container'>
             <div id='search-bar'>
                 <svg id='search-icon'>
                     <path d='M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'></path>
                 </svg>
-                <input type='text' id='search-bar-input'>
+                <input id='search-bar-input' type='text'> 
             </div>
         </div>
         <div id='search-buttons-container'>
-            <input type='button' class='search-button' value='Google Search'>
-            <input type='button' class='search-button' value="I'm Feeling Lucky">
+            <input class='search-button' type='button' value='Google Search'>
+            <input class='search-button' type='button' value="I'm Feeling Lucky">
         </div>
     </div>
 </main>
 <footer>
-    <div class='footer-part footer-left-part'>
+    <div class='footer-half footer-half__left'>
         <div class='footer-link-container'>
               <a href='#'>Advertising</a>
         </div>
@@ -60,7 +65,7 @@
               <a href='#'>How Search works</a>
         </div>
     </div>
-    <div class='footer-part footer-right-part'>
+    <div class='footer-half footer-half__right'>
         <div class='footer-link-container'>
               <a href='#'>Privacy</a>
         </div>
