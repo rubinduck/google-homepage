@@ -162,7 +162,7 @@ main {
     border: 1px solid #dfe1e5;
 }
 
-#search-bar:hover {
+#search-bar:focus-within, #search-bar:hover{
     box-shadow: 0 0 2px 2px var(--light-grey);
 }
 
