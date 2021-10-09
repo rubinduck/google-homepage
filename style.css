@@ -27,11 +27,10 @@ a:hover {
 
 /* Page style */
 #page-container {
-    overflow-x: hidden;
-    height: 100vh;
     display: flex;
-    flex-grow: 1;
     flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden;
     font-family: arial,sans-serif;
 }
 
@@ -39,12 +38,12 @@ a:hover {
 
 /* Header style */
 header {
-    font-size: 0.9rem;
-    margin-top: 0.625rem;
     display: flex;
     flex-direction: row;
-    width: 100%;
     justify-content: space-between;
+    width: 100%;
+    margin-top: 0.625rem;
+    font-size: 0.9rem;
 }
 
 .header-part:first-of-type {
@@ -53,7 +52,7 @@ header {
 
 .header-part {
     display: flex;
-    direction: row;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -63,16 +62,15 @@ header {
 
 .header-part > div {
     padding: 0 1em 0 1em;
-    flex-shrink: 1;
 }
 
 #sign-in-button {
-    background-color: RGBA(26, 115, 232, 1);
-    border-radius: 0.35rem;
+    position: relative;
     padding: 0.6rem 1.1rem 0.6rem 1.1rem;
     margin-right: 0.5rem;
+    background-color: RGBA(26, 115, 232, 1);
+    border-radius: 0.35rem;
     color: white;
-    position: relative;
 }
 
 #sign-in-button > a:hover {
@@ -84,12 +82,12 @@ header {
 }
 
 #sign-in-button > a::before {
-    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
+    content: "";
 }
 
 #google-apps-link {
@@ -127,10 +125,10 @@ header {
 
 /* Main page part style */
 main {
-    flex-grow: 5;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 5;
 }
 
 #search-container {
@@ -158,17 +156,17 @@ main {
 
 #search-bar-container {
     position: relative;
-    max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    max-width: 100%;
 }
 
 #search-bar {
-    max-width: 80%;
-    margin-top: 20px;
     min-width: 450px;
     width: 725px;
+    max-width: 80%;
+    margin-top: 20px;
     line-height: 2.6rem;
     border-radius: 1.5rem;
     border: 1px solid #dfe1e5;
@@ -179,30 +177,29 @@ main {
 }
 
 #search-bar-input {
-    font-size: 1rem;
-    margin-left: 3.5rem;
-    line-height: 2rem;
     width: 80%;
+    margin-left: 3.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
     border: none;
 }
 
 #search-buttons-container {
-    margin-top: 0.5em;
-    font-size: smaller;
-    gap: 1em;
     display: flex;
     flex-direction: flex-row;
     justify-content: center;
+    gap: 1em;
     padding: 1em;
     margin-top: 1em;
+    font-size: smaller;
 }
 
 .search-button {
+    padding: 0.75em 1em 0.75em 1em;
     font-size: 0.9rem;
     border-radius: 0.25rem;
     background-color: #F8F9FA;
     border: none;
-    padding: 0.75em 1em 0.75em 1em;
 }
 
 .search-button:hover {
@@ -212,9 +209,9 @@ main {
 }
 
 #search-icon {
+    position: absolute;
     width: 32px;
     height: 32px;
-    position: absolute;
     top: 50%;
     left: 12.5%;
     opacity: 0.35;
@@ -224,10 +221,10 @@ main {
 
 /* Footer style */
 footer {
-    background-color: #f2f2f2;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: #f2f2f2;
 }
 
 .footer-part {
@@ -245,8 +242,8 @@ footer {
 }
 
 .footer-link-container {
-    font-size: 0.9rem;
     padding: 1rem;
+    font-size: 0.9rem;
     color: #70757a;
 }
 
